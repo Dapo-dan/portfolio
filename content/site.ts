@@ -2,10 +2,10 @@ import { ROUTES } from "@/lib/constants";
 import type { SiteConfig } from "@/types/site";
 
 export const site: SiteConfig = {
-  name: "Oladapo Portfolio",
-  title: "Oladapo | Frontend Engineer",
+  name: "Oladapo",
+  title: "Oladapo | Fintech & AI Mobile Engineer",
   description:
-    "Personal portfolio built with Next.js App Router, TypeScript, and Tailwind CSS.",
+    "Senior fintech and AI mobile engineer building secure, high-performance systems for regulated markets.",
   nav: [
     { href: ROUTES.home, label: "Home" },
     { href: ROUTES.projects, label: "Projects" },

@@ -13,14 +13,14 @@ export function ContactStatusBanner({ status, messages }: ContactStatusProps) {
 
   if (status === CONTACT_STATUS.success) {
     return (
-      <p className="mb-4 rounded-md bg-emerald-50 px-3 py-2 text-sm text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-300">
+      <p className="mb-6 rounded-lg border border-accent/40 bg-background px-4 py-3 text-sm text-accent">
         {messages.success}
       </p>
     );
   }
 
   return (
-    <p className="mb-4 rounded-md bg-red-50 px-3 py-2 text-sm text-red-700 dark:bg-red-950/50 dark:text-red-300">
+    <p className="mb-6 rounded-lg border border-primary-hover/40 bg-background px-4 py-3 text-sm text-primary-hover">
       {messages.error}
     </p>
   );

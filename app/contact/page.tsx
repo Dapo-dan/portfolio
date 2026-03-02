@@ -13,7 +13,7 @@ type ContactPageProps = {
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Reach out for frontend engineering collaboration.",
+  description: "Reach out for fintech and AI mobile engineering collaboration.",
 };
 
 function getStatus(status?: string): ContactStatus | undefined {

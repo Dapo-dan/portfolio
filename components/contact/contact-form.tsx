@@ -11,16 +11,16 @@ type ContactFormProps = {
 };
 
 const inputClassName =
-  "w-full rounded-md border border-zinc-300 bg-white px-3 py-2 text-sm outline-none ring-zinc-300 transition placeholder:text-zinc-400 focus:ring-2 dark:border-zinc-700 dark:bg-zinc-950";
+  "w-full rounded-lg border border-border bg-background px-4 py-3 text-sm text-text-primary outline-none ring-primary transition-colors duration-200 placeholder:text-text-muted focus:ring-2";
 
 export function ContactForm({ fields, status, statusMessages, submitLabel }: ContactFormProps) {
   return (
-    <div className="max-w-xl rounded-xl border border-zinc-200 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900">
+    <div className="max-w-2xl rounded-2xl border border-border bg-surface p-8 sm:p-10">
       <ContactStatusBanner status={status} messages={statusMessages} />
-      <form action={submitContact} className="space-y-4">
+      <form action={submitContact} className="space-y-6">
         {fields.map((field) => (
-          <div key={field.name} className="space-y-1">
-            <label htmlFor={field.name} className="text-sm font-medium text-zinc-800 dark:text-zinc-200">
+          <div key={field.name} className="space-y-2.5">
+            <label htmlFor={field.name} className="text-sm font-medium text-text-primary">
               {field.label}
             </label>
             {field.inputType === "textarea" ? (
@@ -45,7 +45,7 @@ export function ContactForm({ fields, status, statusMessages, submitLabel }: Con
 
         <button
           type="submit"
-          className="rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-zinc-700 dark:bg-zinc-100 dark:text-zinc-900 dark:hover:bg-zinc-300"
+          className="rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-text-primary transition-colors duration-200 hover:bg-primary-hover"
         >
           {submitLabel}
         </button>

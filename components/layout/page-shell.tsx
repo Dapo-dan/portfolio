@@ -7,5 +7,9 @@ type PageShellProps = {
 };
 
 export function PageShell({ children }: PageShellProps) {
-  return <Container>{children}</Container>;
+  return (
+    <Container>
+      <div className="py-16 sm:py-20">{children}</div>
+    </Container>
+  );
 }

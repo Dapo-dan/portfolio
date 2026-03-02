@@ -7,7 +7,7 @@ import { getProjects } from "@/lib/projects";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Project case studies and production frontend work.",
+  description: "Case studies across fintech infrastructure and AI mobile product systems.",
 };
 
 export default function ProjectsPage() {
@@ -15,8 +15,8 @@ export default function ProjectsPage() {
 
   return (
     <PageShell>
-      <Section title="Projects" description="A concise list of recent product and platform work.">
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <Section title="Case Studies" description="Production fintech and AI mobile engineering delivered with an architecture-first approach.">
+        <div className="grid gap-6 lg:grid-cols-2">
           {projects.map((project) => (
             <ProjectCard key={project.slug} project={project} />
           ))}

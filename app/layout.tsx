@@ -24,8 +24,8 @@ type RootLayoutProps = Readonly<{
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className="dark">
-      <body className="min-h-screen bg-zinc-950 text-zinc-100 antialiased">
-        <div className="flex min-h-screen flex-col bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100">
+      <body className="min-h-screen bg-background text-text-primary antialiased">
+        <div className="flex min-h-screen flex-col bg-background text-text-primary">
           <SiteHeader />
           <main className="flex-1">{children}</main>
           <SiteFooter />

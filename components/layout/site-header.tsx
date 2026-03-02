@@ -5,17 +5,17 @@ import { Container } from "@/components/ui/container";
 
 export function SiteHeader() {
   return (
-    <header className="border-b border-zinc-200/80 bg-white/90 backdrop-blur dark:border-zinc-800/80 dark:bg-zinc-950/90">
+    <header className="sticky top-0 z-40 border-b border-border/90 bg-background/90 backdrop-blur-md">
       <Container>
-        <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="text-sm font-semibold tracking-wide text-zinc-900 dark:text-zinc-100">
+        <div className="flex h-16 items-center justify-between sm:h-20">
+          <Link href="/" className="text-base font-semibold tracking-tight text-text-primary sm:text-lg">
             {site.name}
           </Link>
           <nav>
-            <ul className="flex items-center gap-5 text-sm text-zinc-700 dark:text-zinc-300">
+            <ul className="flex items-center gap-5 text-sm font-medium text-text-muted sm:gap-8">
               {site.nav.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="transition hover:text-zinc-900 dark:hover:text-zinc-100">
+                  <Link href={item.href} className="transition-colors duration-200 hover:text-text-primary">
                     {item.label}
                   </Link>
                 </li>

@@ -13,16 +13,16 @@ export const homeContent = {
 
 export const aboutContent = {
   title: "About",
-  description: "Senior frontend engineer with a product and platform mindset.",
+  description: "Senior fintech and AI mobile engineer with a product systems mindset.",
   paragraphs: [
-    "I build robust frontend applications with strong performance baselines, straightforward architecture, and maintainable developer workflows.",
-    "My recent work has focused on scaling Next.js applications, improving runtime performance, and designing reusable UI systems for growing teams.",
+    "I design and ship mobile systems where reliability, compliance, and speed of delivery all matter at once.",
+    "Recent work spans remittance rails, wallet lifecycle architecture, KYC-critical onboarding, open banking integration, and AI-assisted workflows.",
   ],
 } as const;
 
 export const contactContent = {
   title: "Contact",
-  description: "Send a message and I will get back to you soon.",
+  description: "Share your product goals and technical context. I will reply with a practical next step.",
   submitLabel: "Send message",
   statusMessages: {
     success: "Message sent successfully.",

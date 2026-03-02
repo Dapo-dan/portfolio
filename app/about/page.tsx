@@ -13,7 +13,7 @@ export default function AboutPage() {
   return (
     <PageShell>
       <Section title={aboutContent.title} description={aboutContent.description}>
-        <div className="max-w-3xl space-y-4 text-sm leading-7 text-zinc-600 dark:text-zinc-400">
+        <div className="max-w-4xl space-y-6 rounded-2xl border border-border bg-surface p-8 text-base leading-8 text-text-muted sm:p-10">
           {aboutContent.paragraphs.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}
